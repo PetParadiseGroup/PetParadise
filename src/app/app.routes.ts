@@ -6,8 +6,8 @@ import {ProductsContentComponent} from "./products/products-content/products-con
 
 export const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'login', component: LoginComponent},
-  {path: 'home', component: HomeContentComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'products', component: ProductsContentComponent}
+  {path: 'PetParadise/login', component: LoginComponent},
+  {path: 'PetParadise/home', component: HomeContentComponent},
+  {path: 'PetParadise/register', component: RegisterComponent},
+  {path: 'PetParadise/products', component: ProductsContentComponent}
 ];
