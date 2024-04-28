@@ -1,0 +1,20 @@
+<main>
+  <div id="containerrg" class="container__register">
+            <h1 class="register__title">Registro de Sesión</h1>
+            <form id="formRegister" class="form__group form__group--register" action="/registrar" method="POST">
+                <div class="input__container--register">
+                    <input [(ngModel)]="userData.correo" class="input__text--register" id="email" type="email" placeholder="Email" name="txtEmail" required>
+                    <input [(ngModel)]="userData.contrasenia" class="input__text--register" id="id" type="password" placeholder="Password" name="txtPassword" required>
+                    <input [(ngModel)]="userData.nombre" class="input__text--register" id="nombre" type="text" placeholder="Nombre" name="txtNombre" required>
+                    <input [(ngModel)]="userData.apellido_paterno" class="input__text--register" id="apellidop" type="text" placeholder="Apellido Paterno" name="txtApellidoP" required>
+                    <input [(ngModel)]="userData.apellido_materno" class="input__text--register" id="apellidom" type="text" placeholder="Apellido Materno" name="txtApellidoM" required>
+                    <input [(ngModel)]="userData.celular" class="input__text--register" id="celular" type="text" placeholder="Celular" name="txtCelular" required>
+                    <input [(ngModel)]="userData.direccion" class="input__text--register" id="direccion" type="text" placeholder="Direccion" name="txtDireccion" required>
+                </div>
+                <input (click)="onRegister()" id="btnRegister" class="submit__btn" type="submit" value="Crear cuenta">
+                <div class="registrarse">
+                    <span class="span__text">¿Ya tienes una cuenta? <a id="linkRegister" href="">Inicia Sesión</a></span>
+                </div>
+            </form>
+        </div>
+</main>
